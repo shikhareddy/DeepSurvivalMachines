@@ -26,16 +26,10 @@ setup(
         "Intended Audience :: Education",
         "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering",
-        "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3",
     ],
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
     python_requires=">=3.6",
     install_requires=["torch", "numpy", "pandas", "tqdm", "scikit-learn"],
-    entry_points={
-        "console_scripts": [
-            "realpython=reader.__main__:main",
-        ]
-    },
 )
